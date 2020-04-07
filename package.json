@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-saas-marketing",
-  "private": true,
-  "description": "A simple one page marketing starter for saas companies",
-  "version": "0.1.0",
-  "author": "Keegan Burkett <keegan.t.marciniak@gmail.com>",
+  "name": "mm-landing-page",
+  "private": false,
+  "description": "Learn music from carefully selected videos",
+  "version": "0.0.0",
+  "author": "Stan Clarke, Jr. <stan@stanclarkejr.ca>",
   "dependencies": {
     "@videojs/themes": "^1.0.0",
     "gatsby": "^2.15.31",
@@ -32,7 +32,10 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "education",
+    "entertainment",
+    "music",
+    "social"
   ],
   "license": "MIT",
   "scripts": {
@@ -45,9 +48,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/stanclarke-jr/mm-landing-page"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/stanclarke-jr/mm-landing-page/issues"
   }
 }
