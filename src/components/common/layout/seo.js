@@ -10,6 +10,7 @@ const SEO = ({ description, lang, meta, title }) => {
         site {
           siteMetadata {
             title
+            siteUrl
             description
             author
           }

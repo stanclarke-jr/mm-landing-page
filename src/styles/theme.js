@@ -2,14 +2,14 @@
 
 const theme = {
   font: {
-    primary: `'HK Grotesk Normal'`,
-    secondary: `'HK Grotesk Medium'`,
-    light: `'HK Grotesk Light'`,
-    normal: `'HK Grotesk Normal'`,
-    medium: `'HK Grotesk Medium'`,
-    semibold: `'HK Grotesk Semibold'`,
-    bold: `'HK Grotesk Bold'`,
-    extrabold: `'HK Grotesk Extra Bold'`,
+    primary: `'Open Sans Regular'`,
+    secondary: `'Open Sans SemiBold'`,
+    light: `'Open Sans Light'`,
+    normal: `'Open Sans Regular'`,
+    medium: `'Open Sans SemiBold'`,
+    semibold: `'Open Sans SemiBold'`,
+    bold: `'Raleway Bold'`,
+    extrabold: `'Raleway ExtraBold'`,
   },
   font_size: {
     xxxsmall: "font-size: 12px;",
@@ -23,23 +23,24 @@ const theme = {
   },
 
   color: {
-    primary: "#071435",
-    secondary: "#098c8c",
-    accent: "#cca86e",
+    primary: "#161b40",
+    secondary: "#41b853",
+    accent: "#f40058",
+    lightAccent: "#43bee5",
     background: {
       white: "#ffffff",
-      light: "#f8f8f8",
+      light: "#eef1f0",
     },
     white: {
       regular: "#ffffff",
-      lessdark: "#faf9f8",
+      lessdark: "#eef1f0",
       dark: "#f6f6f6",
       darker: "#eeeeee",
     },
     black: {
       lightest: "#ABA8AF",
       light: "#564F62",
-      regular: "#071435",
+      regular: "#161b40",
     },
   },
   screen: {

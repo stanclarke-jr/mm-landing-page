@@ -6,9 +6,9 @@ import { Container, Section } from "../global"
 const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
-      <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
+      <GetStartedTitle>Be among the first to know when we're live</GetStartedTitle>
       <TryItButton>Get early access</TryItButton>
-      <Subtitle>No credit card required.</Subtitle>
+      <Subtitle>No credit card required. It's free.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )
@@ -16,7 +16,7 @@ const GetStarted = () => (
 export default GetStarted
 
 const StyledSection = styled(Section)`
-  background-color: ${props => props.theme.color.background.light};
+  background-color: #f6f6f6;
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
 `
 
@@ -44,7 +44,7 @@ const TryItButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
+  background: ${props => props.theme.color.accent};
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;

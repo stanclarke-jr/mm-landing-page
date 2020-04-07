@@ -1,29 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter SaaS Marketing`,
-    description: `A simple one page marketing starter for saas companies.`,
-    author: `Keegan Burkett`,
+    title: `MuseMasters`,
+    siteUrl: `https://muzemasters.com`,
+    description: `Learn music from carefully selected videos.`,
+    author: `Stan Clarke, Jr.`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `600`, `700`],
-          },
-        ],
-      },
-    },
-
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `product`,
-        path: `${__dirname}/src/images/product`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -31,17 +20,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `MuseMasters`,
+        short_name: `MMasters`,
+        categories: [`education`, `entertainment`, `music`, `social`],
+        description: `Learn music from carefully selected videos.`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#161b40`,
+        theme_color: `#161b40`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/musemasters-icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

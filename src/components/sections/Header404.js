@@ -4,7 +4,7 @@ import VideoPlayer from "../common/VideoPlayer"
 import "videojs-youtube/dist/Youtube.min.js"
 import { Container } from "../global"
 
-const Header = () => {
+const Header404 = () => {
   const videoJsOptions = {
     autoplay: false,
     controls: true,
@@ -22,18 +22,28 @@ const Header = () => {
   return (
     <HeaderWrapper id="top">
       <Container>
+        <div style={{
+          color: `#eef1f0`,
+          paddingBottom: `80px`
+        }}
+        >
+          <h1>404 - NOT FOUND</h1>
+          <p>Sorry, the page you are looking for doesn&#39;t exist... but since you're here...</p>
+        </div>
         <Flex>
           <HeaderTextGroup>
             <h1>
-              <span>Learn music</span><br /> from <span>carefully</span> selected videos
+              <span>Learn music</span><br />
+              from <span>carefully</span> selected videos
             </h1>
             <p>
-              We did the work so you don’t have to. Save hours of searching, <em>practice</em> instead.
+              We did the work so you don’t have to. Save hours of searching,
+              <em>practice</em> instead.
             </p>
             <HeaderForm
               name="early-access"
               method="post"
-              action="/thanks"
+              action="/pages/thanks"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             // data-netlify-recaptcha="true"
@@ -57,12 +67,12 @@ const Header = () => {
             <br />
           </ImageWrapper>
         </Flex>
-      </Container>
-    </HeaderWrapper>
+      </Container >
+    </HeaderWrapper >
   )
 }
 
-export default Header
+export default Header404
 
 const HeaderWrapper = styled.header`
   background-color: #161b40;

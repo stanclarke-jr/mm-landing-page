@@ -35,7 +35,7 @@ export const Section = styled.section`
   background-color: ${props => {
     switch (props.accent) {
       case "secondary":
-        return props.theme.color.white.dark
+        return props.theme.color.white.lessdark
       case "main":
         return props.theme.color.primary
       default:
@@ -50,8 +50,8 @@ export const Section = styled.section`
   ${props =>
     props.accent &&
     `background-color: ${
-      props.accent === "secondary"
-        ? props.theme.color.white.dark
-        : props.theme.color.primary
+    props.accent === "secondary"
+      ? props.theme.color.white.lessdark
+      : props.theme.color.primary
     }`};
 `

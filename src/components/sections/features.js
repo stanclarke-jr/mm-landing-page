@@ -7,41 +7,30 @@ const Features = () => (
   <Section id="features">
     <StyledContainer>
       <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <SectionTitle>Expertly curated videos</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>Favourites</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            Bookmark your favourite resources for future refefence.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Upvote</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Give you two cents. Vote for the best videos.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>Submissions</FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            Add to the collection! Learned something awesome? Submit it.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
+          <FeatureTitle>Community</FeatureTitle>
           <FeatureText>
-            Easily link up to 5 banks to your finance account.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
-          <FeatureText>
-            High interest and rewards for hitting your goals.
+            Know you are not alone. Learn music alongside others.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
@@ -63,7 +52,7 @@ const SectionTitle = styled.h3`
 
 const Subtitle = styled.h5`
   font-size: 16px;
-  color: ${props => props.theme.color.accent};
+  color: ${props => props.theme.color.lightAccent};
   letter-spacing: 0px;
   margin-bottom: 12px;
   text-align: center;
@@ -74,7 +63,7 @@ const FeaturesGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0px auto;
-  grid-column-gap: 40px;
+  grid-column-gap: 80px;
   grid-row-gap: 35px;
   @media (max-width: ${props => props.theme.screen.sm}) {
     grid-template-columns: 1fr;

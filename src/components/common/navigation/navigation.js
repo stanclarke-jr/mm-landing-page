@@ -2,20 +2,21 @@ import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
+import logo from "../../../images/logo.png"
 
 import { Container } from "../../global"
 import {
   Nav,
   NavItem,
-  Brand,
+  //Brand,
   StyledContainer,
   NavListWrapper,
   MobileMenu,
   Mobile,
-  ActionsContainer,
+  // ActionsContainer,
 } from "./style"
 
-const NAV_ITEMS = ["Features", "Product", "Pricing", ""]
+const NAV_ITEMS = [/* "Features", "Product", "Pricing" */]
 
 export default class Navigation extends Component {
   state = {
@@ -74,13 +75,13 @@ export default class Navigation extends Component {
     return (
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
         <StyledContainer>
-          <Brand>
-            <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-              <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                Finance
-              </AnchorLink>
-            </Scrollspy>
-          </Brand>
+          {/* <Brand> */}
+          <Scrollspy offset={-64} item={["top"]} currentClassName="active">
+            <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+              <img src={logo} alt="Logo" width="225" height="50" />
+            </AnchorLink>
+          </Scrollspy>
+          {/* </Brand> */}
           <Mobile>
             <button
               onClick={this.toggleMobileMenu}
@@ -89,15 +90,15 @@ export default class Navigation extends Component {
               {this.state.mobileMenuOpen ? (
                 <X size={24} alt="close menu" />
               ) : (
-                <Menu size={24} alt="open menu" />
-              )}
+                  <Menu size={24} alt="open menu" />
+                )}
             </button>
           </Mobile>
 
           <Mobile hide>{this.getNavList({})}</Mobile>
-          <ActionsContainer>
+          {/* <ActionsContainer>
             <button>Sign up</button>
-          </ActionsContainer>
+          </ActionsContainer> */}
         </StyledContainer>
         <Mobile>
           {mobileMenuOpen && (

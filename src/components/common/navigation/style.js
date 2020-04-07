@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: ${props => (props.scrolled ? `white` : null)};
+  background: ${props => (props.scrolled ? `#161b40` : null)};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 
@@ -27,8 +27,8 @@ export const NavListWrapper = styled.div`
     flex-direction: row;
 
     ${({ mobile }) =>
-      mobile &&
-      `
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
 
@@ -48,7 +48,7 @@ export const NavItem = styled.li`
   a {
     text-decoration: none;
     opacity: 0.9;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.lessdark};
   }
 
   &.active {
@@ -68,7 +68,7 @@ export const MobileMenu = styled.div`
 export const Brand = styled.div`
   font-family: ${props => props.theme.font.extrabold};
   ${props => props.theme.font_size.regular};
-  color: ${props => props.theme.color.black.regular};
+  color: ${props => props.theme.color.white.lessdark};
   text-decoration: none;
   letter-spacing: 1px;
   margin: 0;
@@ -78,7 +78,7 @@ export const Brand = styled.div`
     padding: 0;
 
     a {
-      color: ${props => props.theme.color.black.regular};
+      color: ${props => props.theme.color.white.lessdark};
       text-decoration: none;
     }
   }
@@ -94,7 +94,7 @@ export const ActionsContainer = styled.div`
     font-family: ${props => props.theme.font.normal};
     ${props => props.theme.font_size.xsmall};
     color: white;
-    background: #098b8c;
+    background: #f40058;
     border-radius: 4px;
     padding: 10px 16px;
     text-transform: uppercase;

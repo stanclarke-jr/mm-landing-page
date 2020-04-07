@@ -57,6 +57,10 @@ typings/
 # gatsby files
 .cache/
 public
+gatsby-browser.js
+gatsby-ssr.js
+gatsby-node.js
+LICENSE
 
 # Mac files
 .DS_Store

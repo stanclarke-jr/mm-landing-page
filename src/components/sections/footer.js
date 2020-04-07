@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import logo from "../../images/logo.png"
 
 import { Container } from "../global"
 
@@ -9,14 +10,15 @@ const Footer = () => (
       <FooterColumn>
         <span>Features</span>
         <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
+          <li>Favourites</li>
+          <li>Upvote</li>
+          <li>Submissions</li>
+          <li>Community</li>
         </ul>
       </FooterColumn>
       <FooterColumn>
         <span>Resources</span>
         <ul>
-          <li>Compare</li>
           <li>Blog</li>
         </ul>
       </FooterColumn>
@@ -24,49 +26,33 @@ const Footer = () => (
         <span>Company</span>
         <ul>
           <li>About Us</li>
-          <li>Careers</li>
         </ul>
       </FooterColumn>
       <FooterColumn>
         <span>Social</span>
         <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <img src={logo} alt="Logo" width="225" height="50" />
     </BrandContainer>
   </FooterWrapper>
 )
 
 const FooterWrapper = styled.footer`
-  background-color: white;
-  margin: 80px 0 0;
-  padding: 0 0 80px;
-`
-
-const Logo = styled.div`
-  font-family: ${props => props.theme.font.extrabold};
-  ${props => props.theme.font_size.regular};
-  color: ${props => props.theme.color.black.regular};
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 9;
-  text-decoration: none;
-  outline: 0px;
+  text-align: center;
+  background-color: #161b40;
+  padding: 40px 0 80px;
 `
 
 const BrandContainer = styled(Container)`
   position: relative;
-  padding-top: 48px;
+  padding-top: 96px;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
 
   @media (max-width: ${props => props.theme.screen.sm}) {
@@ -86,13 +72,13 @@ const FooterColumn = styled.div`
   span {
     font-size: 16px;
     font-family: ${props => props.theme.font.bold};
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.white.lessdark};
   }
   ul {
     list-style: none;
     margin: 16px 0;
     padding: 0;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.lessdark};
     li {
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};
