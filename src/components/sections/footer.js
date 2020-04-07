@@ -7,7 +7,7 @@ import { Container } from "../global"
 const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
-      <FooterColumn>
+      {/* <FooterColumn>
         <span>Features</span>
         <ul>
           <li>Favourites</li>
@@ -34,7 +34,7 @@ const Footer = () => (
           <li>Facebook</li>
           <li>Twitter</li>
         </ul>
-      </FooterColumn>
+      </FooterColumn> */}
     </FooterColumnContainer>
     <BrandContainer>
       <img src={logo} alt="Logo" width="225" height="50" />
