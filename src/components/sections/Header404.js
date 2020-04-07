@@ -43,7 +43,7 @@ const Header404 = () => {
             <HeaderForm
               name="early-access"
               method="post"
-              action="/pages/thanks"
+              action="/thanks"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             // data-netlify-recaptcha="true"
