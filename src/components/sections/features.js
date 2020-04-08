@@ -12,7 +12,7 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>Favourites</FeatureTitle>
           <FeatureText>
-            Bookmark your favourite resources for future refefence.
+            Bookmark your favourite resources for future reference.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
