@@ -9,7 +9,8 @@ const ThanksHeader = () => {
       <Container>
         <div>
           <h1>Thank You!!</h1>
-          <p>We'll let you know as soon as we're live. See you soon!</p>
+          <p>We'll let you know as soon as we're live. <br />
+          See you soon!</p>
         </div>
       </Container>
     </HeaderWrapper>
@@ -20,7 +21,7 @@ export default ThanksHeader
 
 const HeaderWrapper = styled.header`
   background-color: #161b40;
-  padding: 160px 0 80px 0;
+  padding: 160px 0 80px 40px;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   margin: 0;

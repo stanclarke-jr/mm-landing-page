@@ -18,7 +18,7 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>Upvote</FeatureTitle>
           <FeatureText>
-            Give you two cents. Vote for the best videos.
+            Give your two cents. Vote for the best videos.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
