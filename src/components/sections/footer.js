@@ -44,7 +44,7 @@ const Footer = () => (
 
 const FooterWrapper = styled.footer`
   text-align: center;
-  background-color: #161b40;
+  background-color: #111533;
   padding: 40px 0 80px;
 `
 
