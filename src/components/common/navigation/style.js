@@ -106,7 +106,8 @@ export const Mobile = styled.div`
   display: none;
 
   @media (max-width: ${props => props.theme.screen.xs}) {
-    display: block;
+    ${'' /* display: block; */}
+    display: none;
   }
 
   ${props =>

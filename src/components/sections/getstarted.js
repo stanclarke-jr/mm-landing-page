@@ -31,11 +31,14 @@ const GetStartedContainer = styled(Container)`
 const GetStartedTitle = styled.h3`
   margin: 0 auto 32px;
   text-align: center;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    padding: 0 5px;
+  }
 `
 
 const TryItButton = styled.button`
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   color: white;
   letter-spacing: 1px;
   height: 60px;

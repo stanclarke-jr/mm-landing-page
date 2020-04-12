@@ -8,15 +8,10 @@ const Header = () => {
   const videoJsOptions = {
     autoplay: false,
     controls: true,
-    width: 425,
-    height: 239.0625,
     sources: [{
       src: 'https://www.youtube.com/embed/OG__SwkV3wg',
       type: 'video/youtube'
     }],
-    youtube: {
-      modestbranding: 1,
-    }
   }
 
   return (
@@ -39,7 +34,21 @@ const Header = () => {
             // data-netlify-recaptcha="true"
             >
               <input type="hidden" name="form-name" value="early-access" />
-              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="bot-field" />\
+              <HeaderInput
+                type="first-name"
+                name="first-name"
+                id="first-name"
+                placeholder="First name"
+                required
+              />
+              <HeaderInput
+                type="last-name"
+                name="last-name"
+                id="last-name"
+                placeholder="Last name"
+                required
+              />
               <HeaderInput
                 type="email"
                 name="email"
@@ -50,12 +59,10 @@ const Header = () => {
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
-          <ImageWrapper>
-            <div>
-              <VideoPlayer {...videoJsOptions} />
-            </div>
+          <VideoWrapper>
+            <VideoPlayer {...videoJsOptions} />
             <br />
-          </ImageWrapper>
+          </VideoWrapper>
         </Flex>
       </Container>
     </HeaderWrapper>
@@ -75,6 +82,7 @@ const HeaderWrapper = styled.header`
 
 const HeaderTextGroup = styled.div`
   margin: 0;
+  padding-right: 10px;
 
   > div {
     width: 120%;
@@ -118,7 +126,7 @@ const Flex = styled.div`
 
 const HeaderForm = styled.form`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-bottom: 64px;
 
   @media (max-width: ${props => props.theme.screen.sm}) {
@@ -140,27 +148,30 @@ const HeaderInput = styled.input`
   border-image: initial;
   border-radius: 4px;
   padding: 8px 16px;
+  margin-bottom: 8px;
   outline: 0px;
   &:focus {
     box-shadow: inset ${props => props.theme.color.secondary} 0px 0px 0px 2px;
   }
   @media (max-width: ${props => props.theme.screen.md}) {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     display: block;
     width: 100%;
+    margin-bottom: 6px;
   }
 `
 
 const HeaderButton = styled.button`
-  font-weight: 500;
-  font-size: 14px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
   color: white;
   letter-spacing: 1px;
   height: 60px;
   display: block;
-  margin-left: 8px;
+  margin-top: 8px;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
@@ -182,9 +193,10 @@ const HeaderButton = styled.button`
   }
 `
 
-const ImageWrapper = styled.div`
-  justify-self: end;
-  align-self: center;
+const VideoWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: center;
   }
