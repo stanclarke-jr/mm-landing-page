@@ -8,6 +8,8 @@ const Header = () => {
   const videoJsOptions = {
     autoplay: false,
     controls: true,
+    width: 480,
+    height: 270,
     sources: [{
       src: 'https://www.youtube.com/embed/OG__SwkV3wg',
       type: 'video/youtube'

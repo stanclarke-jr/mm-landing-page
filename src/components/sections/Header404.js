@@ -57,6 +57,20 @@ const Header404 = () => {
                 placeholder="Your email"
                 required
               />
+              <HeaderInput
+                type="last-name"
+                name="last-name"
+                id="last-name"
+                placeholder="Last name"
+                required
+              />
+              <HeaderInput
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
@@ -67,8 +81,8 @@ const Header404 = () => {
             <br />
           </ImageWrapper>
         </Flex>
-      </Container >
-    </HeaderWrapper >
+      </Container>
+    </HeaderWrapper>
   )
 }
 

@@ -7,7 +7,7 @@ import ThanksHeader from "../components/sections/ThanksHeader"
 
 const ThankYou = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Thank you!" />
     <Navigation />
     <ThanksHeader />
   </Layout>
