@@ -8,7 +8,6 @@ import { Container } from "../../global"
 import {
   Nav,
   NavItem,
-  //Brand,
   StyledContainer,
   NavListWrapper,
   MobileMenu,
@@ -75,13 +74,11 @@ export default class Navigation extends Component {
     return (
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
         <StyledContainer>
-          {/* <Brand> */}
           <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-            <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+            <AnchorLink href="/" onClick={this.closeMobileMenu}>
               <img src={logo} alt="Logo" width="225" height="50" />
             </AnchorLink>
           </Scrollspy>
-          {/* </Brand> */}
           <Mobile>
             <button
               onClick={this.toggleMobileMenu}

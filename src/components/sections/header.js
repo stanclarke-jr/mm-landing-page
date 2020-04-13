@@ -1,21 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import VideoPlayer from "../common/VideoPlayer"
-import "videojs-youtube/dist/Youtube.min.js"
+import ResponsivePlayer from "../video/ResponsivePlayer"
 import { Container } from "../global"
 
 const Header = () => {
-  const videoJsOptions = {
-    autoplay: false,
-    controls: true,
-    width: 480,
-    height: 270,
-    sources: [{
-      src: 'https://www.youtube.com/embed/OG__SwkV3wg',
-      type: 'video/youtube'
-    }],
-  }
-
   return (
     <HeaderWrapper id="top">
       <Container>
@@ -33,10 +21,9 @@ const Header = () => {
               action="/thanks"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-            // data-netlify-recaptcha="true"
             >
               <input type="hidden" name="form-name" value="early-access" />
-              <input type="hidden" name="bot-field" />\
+              <input type="hidden" name="bot-field" />
               <HeaderInput
                 type="first-name"
                 name="first-name"
@@ -61,10 +48,7 @@ const Header = () => {
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
-          <VideoWrapper>
-            <VideoPlayer {...videoJsOptions} />
-            <br />
-          </VideoWrapper>
+          <ResponsivePlayer />
         </Flex>
       </Container>
     </HeaderWrapper>
@@ -84,7 +68,6 @@ const HeaderWrapper = styled.header`
 
 const HeaderTextGroup = styled.div`
   margin: 0;
-  padding-right: 10px;
 
   > div {
     width: 120%;
@@ -119,7 +102,8 @@ const Flex = styled.div`
   display: grid;
   justify-content: space-between;
   align-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
+  grid-gap: 90px;
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     grid-gap: 64px;
@@ -192,14 +176,5 @@ const HeaderButton = styled.button`
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     margin-left: 0;
-  }
-`
-
-const VideoWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  @media (max-width: ${props => props.theme.screen.md}) {
-    justify-self: center;
   }
 `

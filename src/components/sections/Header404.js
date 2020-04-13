@@ -1,24 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import VideoPlayer from "../common/VideoPlayer"
-import "videojs-youtube/dist/Youtube.min.js"
+import ResponsivePlayer from "../video/ResponsivePlayer"
 import { Container } from "../global"
 
-const Header404 = () => {
-  const videoJsOptions = {
-    autoplay: false,
-    controls: true,
-    width: 425,
-    height: 239.0625,
-    sources: [{
-      src: 'https://www.youtube.com/embed/OG__SwkV3wg',
-      type: 'video/youtube'
-    }],
-    youtube: {
-      modestbranding: 1,
-    }
-  }
 
+const Header404 = () => {
   return (
     <HeaderWrapper id="top">
       <Container>
@@ -46,15 +32,14 @@ const Header404 = () => {
               action="/thanks"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-            // data-netlify-recaptcha="true"
             >
               <input type="hidden" name="form-name" value="early-access" />
               <input type="hidden" name="bot-field" />
               <HeaderInput
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your email"
+                type="first-name"
+                name="first-name"
+                id="first-name"
+                placeholder="First name"
                 required
               />
               <HeaderInput
@@ -74,12 +59,7 @@ const Header404 = () => {
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
-          <ImageWrapper>
-            <div>
-              <VideoPlayer {...videoJsOptions} />
-            </div>
-            <br />
-          </ImageWrapper>
+          <ResponsivePlayer />
         </Flex>
       </Container>
     </HeaderWrapper>
