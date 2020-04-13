@@ -7,7 +7,7 @@ const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
       <GetStartedTitle>Be among the first to know when we're live</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
+      <TryItButton><a href="#top">Get early access</a></TryItButton>
       <Subtitle>No credit card required. It's free.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
@@ -57,6 +57,11 @@ const TryItButton = styled.button`
   outline: 0px;
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
   }
   @media (max-width: ${props => props.theme.screen.md}) {
   }

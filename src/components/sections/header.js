@@ -16,6 +16,7 @@ const Header = () => {
               We did the work so you don’t have to. Save hours of searching, <em>practice</em> instead.
             </p>
             <HeaderForm
+              id="header-form"
               name="early-access"
               method="post"
               action="/thanks"
@@ -48,7 +49,7 @@ const Header = () => {
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
-          <ResponsivePlayer />
+          <ResponsivePlayer url="https://www.youtube.com/watch?v=OG__SwkV3wg" />
         </Flex>
       </Container>
     </HeaderWrapper>
