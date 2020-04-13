@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import logo from "../../images/logo.png"
+// import logo from "../../images/logo.png"
 
 import { Container } from "../global"
 
@@ -36,9 +36,9 @@ const Footer = () => (
         </ul>
       </FooterColumn> */}
     </FooterColumnContainer>
-    <BrandContainer>
+    {/*     <BrandContainer>
       <img src={logo} alt="Logo" width="225" height="50" />
-    </BrandContainer>
+    </BrandContainer> */}
   </FooterWrapper>
 )
 
@@ -48,7 +48,7 @@ const FooterWrapper = styled.footer`
   padding: 40px 0 80px;
 `
 
-const BrandContainer = styled(Container)`
+/* const BrandContainer = styled(Container)`
   position: relative;
   padding-top: 96px;
   display: flex;
@@ -57,7 +57,7 @@ const BrandContainer = styled(Container)`
 
   @media (max-width: ${props => props.theme.screen.sm}) {
   }
-`
+` */
 const FooterColumnContainer = styled(Container)`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
