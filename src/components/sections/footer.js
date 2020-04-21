@@ -7,6 +7,14 @@ import { Container } from "../global"
 const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
+      <FooterColumn>
+        <span>About us</span>
+        <p>MuseMasters is a resource. Hopefully one that will help you on your journey as you learn to play your instrument. These carefully curated videos will teach you how to listen, practice and play.</p>
+
+        <p>These videos are the first phase of a broader vision. Our goal is to make it easier to learn, remove obstacles and save you time. We hope to help you focus on what is important — practicing and playing music. And having fun while you do it!</p>
+
+        <p>Let's stay in touch, so we can keep you posted.</p>
+      </FooterColumn>
       {/* <FooterColumn>
         <span>Features</span>
         <ul>
@@ -60,12 +68,14 @@ const FooterWrapper = styled.footer`
 ` */
 const FooterColumnContainer = styled(Container)`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 32px;
   justify-content: start;
+  width: 60%;
   @media (max-width: ${props => props.theme.screen.sm}) {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
+    ${'' /* grid-template-columns: 1fr 1fr; */}
+    ${'' /* grid-gap: 32px; */}
+    width: 75%;
   }
 `
 const FooterColumn = styled.div`
@@ -84,6 +94,13 @@ const FooterColumn = styled.div`
       font-family: ${props => props.theme.font.normal};
       font-size: 15px;
     }
+  }
+  p {
+    line-height: 20px;
+    padding: 5px 0;
+    font-size: 12px;
+    font-family: ${props => props.theme.font.normal};
+    color: ${props => props.theme.color.white.darker};
   }
 `
 

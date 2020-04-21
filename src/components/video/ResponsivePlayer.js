@@ -15,10 +15,11 @@ const ResponsivePlayer = ({ url }) => {
         config={{
           youtube: {
             playerVars: {
-              iv_load_policy: 0,
+              iv_load_policy: 3,
               modestbranding: 1,
               origin: "https://muzemasters.com",
-              playsinline: 1
+              playsinline: 1,
+              rel: 0
             }
           }
         }}
