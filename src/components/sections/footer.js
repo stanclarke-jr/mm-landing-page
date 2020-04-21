@@ -11,7 +11,7 @@ const Footer = () => (
         <span>About us</span>
         <p>MuseMasters is a resource. Hopefully one that will help you on your journey as you learn to play your instrument. These carefully curated videos will teach you how to listen, practice and play.</p>
 
-        <p>These videos are the first phase of a broader vision. Our goal is to make it easier to learn, remove obstacles and save you time. We hope to help you focus on what is important — practicing and playing music. And having fun while you do it!</p>
+        <p>These videos are the first phase of a broader vision. Our goal is to make it easier to learn and to save you time. We hope to help you focus on what is important — practicing and playing music. And having fun while you do it!</p>
 
         <p>Let's stay in touch, so we can keep you posted.</p>
       </FooterColumn>
