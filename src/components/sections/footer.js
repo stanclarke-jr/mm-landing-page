@@ -80,7 +80,7 @@ const FooterColumnContainer = styled(Container)`
 `
 const FooterColumn = styled.div`
   span {
-    font-size: 16px;
+    font-size: 18px;
     font-family: ${props => props.theme.font.bold};
     color: ${props => props.theme.color.white.lessdark};
   }
@@ -98,7 +98,7 @@ const FooterColumn = styled.div`
   p {
     line-height: 20px;
     padding: 5px 0;
-    font-size: 12px;
+    font-size: 14px;
     font-family: ${props => props.theme.font.normal};
     color: ${props => props.theme.color.white.darker};
   }
