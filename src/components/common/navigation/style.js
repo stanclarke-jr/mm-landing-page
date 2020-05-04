@@ -3,13 +3,13 @@ import styled from "styled-components"
 import { Container } from "../../global"
 
 export const Nav = styled.nav`
-  padding: ${props => (props.scrolled ? `16px 0` : `24px 0`)};
+  padding: ${props => (props.scrolled ? `0` : `0`)};
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: ${props => (props.scrolled ? `rgba(17, 21, 51, 0.9)` : null)};
-  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: ${props => (props.scrolled ? `rgb(17, 21, 51)` : null)};
+  transition: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 
 export const StyledContainer = styled(Container)`

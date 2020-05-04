@@ -75,8 +75,8 @@ export default class Navigation extends Component {
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
         <StyledContainer>
           <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-            <AnchorLink href="https://muzemasters.com" onClick={this.closeMobileMenu}>
-              <img src={logo} alt="Logo" width="225" height="50" />
+            <AnchorLink href="https://musemasters.org" onClick={this.closeMobileMenu}>
+              <img src={logo} alt="Logo" width="180" height="40" />
             </AnchorLink>
           </Scrollspy>
           <Mobile>

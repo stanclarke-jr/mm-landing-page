@@ -45,7 +45,7 @@ const Footer = () => (
       </FooterColumn> */}
     </FooterColumnContainer>
     {/*     <BrandContainer>
-      <img src={logo} alt="Logo" width="225" height="50" />
+      <img src={logo} alt="Logo" width="180" height="40" />
     </BrandContainer> */}
   </FooterWrapper>
 )
